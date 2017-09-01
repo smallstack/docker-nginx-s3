@@ -4,6 +4,6 @@ ENV WORKING_DIRECTORY /opt/work
 ENV HTML_ROOT /usr/share/nginx/html/
 COPY scripts $WORKING_DIRECTORY
 
-ENTRYPOINT bash $WORKING_DIRECTORY/download.sh
+ENTRYPOINT sh $WORKING_DIRECTORY/download.sh
 
 EXPOSE 80
