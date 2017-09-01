@@ -6,6 +6,7 @@ if [[ $ARCHIVE_URL ]]; then
   tar -xzf archive.tar.gz --directory $HTML_ROOT
   echo "Done extracting... HTML Directory Content:"
   ls -la $HTML_ROOT
+  nginx -g 'daemon off;'
 else
   echo "=> Please provide a ARCHIVE_URL environment variable!"
 fi

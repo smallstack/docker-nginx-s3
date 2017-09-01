@@ -10,5 +10,3 @@ COPY scripts $WORKING_DIRECTORY
 ENTRYPOINT sh $WORKING_DIRECTORY/download.sh
 
 EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
